@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 import 'package:website/screens/welcom_screen.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'screens/legal_screen.dart';
 import 'screens/web_download_screen.dart';
 
 void main() {
+  GoRouter.optionURLReflectsImperativeAPIs = true;
+  setPathUrlStrategy();
   runApp(const _App());
 }
 
