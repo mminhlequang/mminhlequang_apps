@@ -6,6 +6,7 @@ class LegalScreen extends StatelessWidget {
 
   bool isNotFound() {
     switch (id) {
+      case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
         return false;
       default:
@@ -15,6 +16,8 @@ class LegalScreen extends StatelessWidget {
 
   String getTitle() {
     switch (id) {
+      case 'privacy-policy-acs':
+        return 'Privacy Policy';
       case 'privacy-policy-dreamart':
         return 'Privacy Policy';
       default:
@@ -24,6 +27,47 @@ class LegalScreen extends StatelessWidget {
 
   String getContent() {
     switch (id) {
+      case 'privacy-policy-acs':
+        return '''
+AdsCheckSpeed - Privacy Policy
+
+Last updated: March 15, 2024
+
+1. Introduction
+AdsCheckSpeed ("we", "our" or "app") is committed to protecting users' privacy. This policy describes how we handle information related to your use of the application.
+
+2. Information Collection and Use
+- We only collect email and password for account authentication purposes
+- Login information is encrypted and secured
+- No user activity tracking
+- No other personal data storage
+- No information sharing or selling to third parties
+
+3. User Rights
+You have the right to:
+- Request deletion of your account and login information
+- Request confirmation about non-collection of other data
+- Change your login information at any time
+- Contact us about any privacy-related concerns
+
+4. Security
+We implement strong security measures to protect:
+- User login information
+- System from unauthorized access
+- Authentication data integrity
+
+5. Policy Changes
+We may update this Privacy Policy from time to time. Any changes will be notified through our app or website.
+
+6. Contact
+If you have any questions about this Privacy Policy, please contact:
+Email: mminh.lequang.dev@gmail.com
+
+7. Legal Compliance
+This policy complies with applicable data protection and privacy regulations, including GDPR and CCPA where applicable.
+
+By using AdsCheckSpeed, you agree to this Privacy Policy.
+''';
       case 'privacy-policy-dreamart':
         return '''
 DreamArt Collection - Privacy Policy
