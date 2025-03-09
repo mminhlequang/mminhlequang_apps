@@ -5,9 +5,12 @@ class LegalScreen extends StatelessWidget {
   const LegalScreen({super.key, required this.id});
 
   bool isNotFound() {
+    print("LegalScreen: $id");
     switch (id) {
       case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
+      case 'terms-of-use-acs':
+      case 'terms-of-use-dreamart':
         return false;
       default:
         return true;
@@ -17,9 +20,11 @@ class LegalScreen extends StatelessWidget {
   String getTitle() {
     switch (id) {
       case 'privacy-policy-acs':
-        return 'Privacy Policy';
       case 'privacy-policy-dreamart':
         return 'Privacy Policy';
+      case 'terms-of-use-acs':
+      case 'terms-of-use-dreamart':
+        return 'Terms of Use (EULA)';
       default:
         return '';
     }
@@ -104,6 +109,116 @@ Email: mminh.lequang.dev@gmail.com
 This policy complies with applicable data protection and privacy regulations, including GDPR and CCPA where applicable.
 
 By using DreamArt Collection, you agree to this Privacy Policy.
+''';
+      case 'terms-of-use-acs':
+        return '''
+AdsCheckSpeed - Terms of Use (EULA)
+
+Last updated: March 15, 2024
+
+1. Acceptance of Terms
+By downloading, installing, or using AdsCheckSpeed ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+2. Description of Service
+AdsCheckSpeed provides tools for analyzing and monitoring ad performance. The App offers both free features and premium features available through subscription.
+
+3. Subscription Details
+3.1. Premium Features Subscription
+   - Title: AdsCheckSpeed Premium
+   - Length: Monthly and annual subscription options available
+   - Price: \$4.99 USD per month (prices may vary by region)
+   - Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period
+   - Payment will be charged to your Apple ID account at confirmation of purchase
+   - Your account will be charged for renewal within 24 hours prior to the end of the current period
+   - Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase
+   - Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription
+
+4. User Account
+You may need to create an account to use certain features of the App. You are responsible for maintaining the confidentiality of your account information.
+
+5. Restrictions on Use
+You agree not to:
+   - Modify, adapt, or hack the App
+   - Use the App for any illegal purpose
+   - Transmit any viruses or harmful code
+   - Attempt to gain unauthorized access to the App's systems
+
+6. Intellectual Property
+All intellectual property rights in the App and its content belong to us or our licensors.
+
+7. Disclaimer of Warranties
+The App is provided "as is" without warranties of any kind.
+
+8. Limitation of Liability
+We shall not be liable for any indirect, incidental, special, consequential, or punitive damages.
+
+9. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+10. Termination
+We may terminate or suspend your access to the App at any time without notice for conduct that we believe violates these Terms.
+
+11. Governing Law
+These terms shall be governed by and construed in accordance with the laws of Vietnam.
+
+12. Contact
+If you have any questions about these Terms, please contact:
+Email: mminh.lequang.dev@gmail.com
+''';
+      case 'terms-of-use-dreamart':
+        return '''
+DreamArt Collection - Terms of Use (EULA)
+
+Last updated: March 15, 2024
+
+1. Acceptance of Terms
+By downloading, installing, or using DreamArt Collection ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+2. Description of Service
+DreamArt Collection provides AI-powered image generation and editing tools. The App offers both free features and premium features available through subscription.
+
+3. Subscription Details
+3.1. Premium Features Subscription
+   - Title: DreamArt Pro
+   - Length: Weekly, monthly, and annual subscription options available
+   - Price: \$4.99 USD per month (prices may vary by region)
+   - Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period
+   - Payment will be charged to your Apple ID account at confirmation of purchase
+   - Your account will be charged for renewal within 24 hours prior to the end of the current period
+   - Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase
+   - Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription
+
+4. User-Generated Content
+You retain ownership of any content you create using the App. However, you grant us a license to use, reproduce, modify, and display such content for the purpose of providing and improving the App.
+
+5. Restrictions on Use
+You agree not to:
+   - Use the App to create content that is illegal, offensive, or violates third-party rights
+   - Distribute or publicly display images generated by the App in a way that violates applicable laws
+   - Reverse engineer or attempt to extract the source code of the App
+   - Use the App for any illegal purpose
+
+6. Intellectual Property
+All intellectual property rights in the App and its underlying technology belong to us or our licensors.
+
+7. Disclaimer of Warranties
+The App is provided "as is" without warranties of any kind.
+
+8. Limitation of Liability
+We shall not be liable for any indirect, incidental, special, consequential, or punitive damages.
+
+9. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+10. Termination
+We may terminate or suspend your access to the App at any time without notice for conduct that we believe violates these Terms.
+
+11. Governing Law
+These terms shall be governed by and construed in accordance with the laws of Vietnam.
+
+12. Contact
+If you have any questions about these Terms, please contact:
+Email: mminh.lequang.dev@gmail.com
 ''';
       default:
         return '';
