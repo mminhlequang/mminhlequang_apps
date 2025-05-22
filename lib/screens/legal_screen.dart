@@ -9,8 +9,10 @@ class LegalScreen extends StatelessWidget {
     switch (id) {
       case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
+      case 'privacy-policy-genqr':
       case 'terms-of-use-acs':
       case 'terms-of-use-dreamart':
+      case 'terms-of-use-genqr':
         return false;
       default:
         return true;
@@ -21,9 +23,11 @@ class LegalScreen extends StatelessWidget {
     switch (id) {
       case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
+      case 'privacy-policy-genqr':
         return 'Privacy Policy';
       case 'terms-of-use-acs':
       case 'terms-of-use-dreamart':
+      case 'terms-of-use-genqr':
         return 'Terms of Use (EULA)';
       default:
         return '';
@@ -217,6 +221,109 @@ We may terminate or suspend your access to the App at any time without notice fo
 These terms shall be governed by and construed in accordance with the laws of Vietnam.
 
 12. Contact
+If you have any questions about these Terms, please contact:
+Email: mminh.lequang.dev@gmail.com
+''';
+      case 'privacy-policy-genqr':
+        return '''
+GenQR - Privacy Policy
+
+Last updated: March 15, 2024
+
+1. Introduction
+GenQR ("we", "our" or "app") is committed to protecting users' privacy. This policy describes how we handle information related to your use of the application.
+
+2. Information Collection and Use
+- We collect email address for account authentication and identification purposes
+- We collect Advertising Data (such as device identifiers, IP address) for displaying relevant advertisements
+- Login information is encrypted and secured
+- We do not track user activity beyond what is necessary for app functionality
+- We do not share or sell your personal data to third parties
+- We use third-party advertising services that may collect and process data according to their own privacy policies
+
+3. User Rights
+You have the right to:
+- Request deletion of your account and associated data
+- Opt out of personalized advertising
+- Request confirmation about data collection and usage
+- Change your login information at any time
+- Contact us about any privacy-related concerns
+
+4. Security
+We implement strong security measures to protect:
+- User login information
+- System from unauthorized access
+- Authentication data integrity
+- User data from unauthorized disclosure
+
+5. Policy Changes
+We may update this Privacy Policy from time to time. Any changes will be notified through our app or website.
+
+6. Contact
+If you have any questions about this Privacy Policy, please contact:
+Email: mminh.lequang.dev@gmail.com
+
+7. Legal Compliance
+This policy complies with applicable data protection and privacy regulations, including GDPR and CCPA where applicable.
+
+By using GenQR, you agree to this Privacy Policy.
+''';
+      case 'terms-of-use-genqr':
+        return '''
+GenQR - Terms of Use (EULA)
+
+Last updated: March 15, 2024
+
+1. Acceptance of Terms
+By downloading, installing, or using GenQR ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+2. Description of Service
+GenQR provides QR code generation and scanning tools. The App offers both free features with advertisements and premium features available through subscription.
+
+3. Subscription Details
+3.1. Premium Features Subscription
+   - Title: GenQR Premium
+   - Length: Monthly and annual subscription options available
+   - Price: \$2.99 USD per month or \$19.99 USD per year (prices may vary by region)
+   - Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period
+   - Payment will be charged to your Apple ID account at confirmation of purchase
+   - Your account will be charged for renewal within 24 hours prior to the end of the current period
+   - Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase
+   - Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription
+
+4. User Account
+You may need to create an account to use certain features of the App. You are responsible for maintaining the confidentiality of your account information.
+
+5. Advertising
+The free version of the App includes advertisements. By using the App, you consent to the display of advertisements and the collection of advertising data as described in our Privacy Policy.
+
+6. Restrictions on Use
+You agree not to:
+   - Use the App to generate QR codes for illegal or harmful purposes
+   - Modify, adapt, or hack the App
+   - Use the App for any illegal purpose
+   - Transmit any viruses or harmful code
+   - Attempt to gain unauthorized access to the App's systems
+
+7. Intellectual Property
+All intellectual property rights in the App and its content belong to us or our licensors.
+
+8. Disclaimer of Warranties
+The App is provided "as is" without warranties of any kind.
+
+9. Limitation of Liability
+We shall not be liable for any indirect, incidental, special, consequential, or punitive damages.
+
+10. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+11. Termination
+We may terminate or suspend your access to the App at any time without notice for conduct that we believe violates these Terms.
+
+12. Governing Law
+These terms shall be governed by and construed in accordance with the laws of Vietnam.
+
+13. Contact
 If you have any questions about these Terms, please contact:
 Email: mminh.lequang.dev@gmail.com
 ''';
