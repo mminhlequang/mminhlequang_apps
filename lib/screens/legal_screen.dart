@@ -335,34 +335,62 @@ Email: mminh.lequang.dev@gmail.com
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: isNotFound()
-            ? Text("Hello world")
-            : SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0, vertical: 24.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(getTitle(),
-                          style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.bold)),
-                      const SizedBox(height: 16),
-                      Text(
-                        getContent(),
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ],
-                  ),
+      backgroundColor: Colors.black,
+      body: isNotFound()
+          ? Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/code GIF.gif'),
+                  fit: BoxFit.cover,
                 ),
               ),
-      ),
+            )
+          : Stack(
+              children: [
+                Opacity(
+                  opacity: 0.2,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/code GIF.gif'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+                Center(
+                  child: SingleChildScrollView(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: MediaQuery.of(context).size.width * 0.1,
+                          vertical: 24.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(getTitle(),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              )),
+                          const SizedBox(height: 16),
+                          Text(
+                            getContent(),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              height: 1.4,
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
     );
   }
 }
