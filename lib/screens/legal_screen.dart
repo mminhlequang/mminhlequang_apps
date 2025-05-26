@@ -7,6 +7,7 @@ class LegalScreen extends StatelessWidget {
   bool isNotFound() {
     print("LegalScreen: $id");
     switch (id) {
+      case 'about-me':
       case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
       case 'privacy-policy-genqr':
@@ -21,6 +22,8 @@ class LegalScreen extends StatelessWidget {
 
   String getTitle() {
     switch (id) {
+      case 'about-me':
+        return 'About Me';
       case 'privacy-policy-acs':
       case 'privacy-policy-dreamart':
       case 'privacy-policy-genqr':
@@ -36,6 +39,72 @@ class LegalScreen extends StatelessWidget {
 
   String getContent() {
     switch (id) {
+      case 'about-me':
+        return '''
+About Me - Software Development Services
+
+Professional Software Developer & Technology Consultant
+
+I specialize in delivering comprehensive software solutions tailored to your business needs. With extensive experience in modern technologies and best practices, I help transform your ideas into powerful, scalable applications.
+
+Services Offered:
+
+1. Mobile App Development
+   - Native iOS & Android applications
+   - Cross-platform solutions using Flutter
+   - Custom UI/UX design
+   - App Store & Play Store optimization
+   - Performance optimization & maintenance
+
+2. Web Development
+   - Custom website development
+   - Progressive Web Apps (PWA)
+   - E-commerce solutions
+   - Content Management Systems
+   - Responsive & modern UI design
+
+3. Desktop Applications
+   - Windows & macOS applications
+   - Cross-platform desktop solutions
+   - Enterprise software
+   - Custom business tools
+
+4. System Development
+   - Enterprise software solutions
+   - Database design & optimization
+   - API development & integration
+   - Cloud-based systems
+   - IoT solutions & integration
+
+5. Technology Stack
+   - Frontend: Flutter, React, Vue.js
+   - Backend: Node.js, Python, Java
+   - Database: PostgreSQL, MongoDB, Firebase
+   - Cloud: AWS, Google Cloud, Azure
+   - Mobile: iOS, Android, Flutter
+   - IoT: Raspberry Pi, Arduino, ESP32
+
+Why Choose My Services:
+- Clean, maintainable code following best practices
+- Modern architecture & scalable solutions
+- Regular updates & maintenance
+- Dedicated support & consultation
+- Competitive pricing
+- Fast delivery & timely communication
+
+Let's discuss how I can help bring your project to life!
+
+Contact Information:
+Minh Le Quang
+Phone: +84 979629201
+Email: mminh.lequang.dev@gmail.com
+
+Available for:
+- Full-time positions
+- Project-based work
+- Long-term contracts
+- Technical consultation
+''';
       case 'privacy-policy-acs':
         return '''
 AdsCheckSpeed - Privacy Policy
