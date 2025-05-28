@@ -8,6 +8,7 @@ class WebDownloadScreen extends StatelessWidget {
   bool isNotFound() {
     switch (appId) {
       case 'dreamart':
+      case 'genqr':
         return false;
       default:
         return true;
@@ -17,7 +18,9 @@ class WebDownloadScreen extends StatelessWidget {
   String getLogo() {
     switch (appId) {
       case 'dreamart':
-        return 'assets/images/logov2-removebg.png';
+        return 'assets/images/logo_dreamart.png';
+      case 'genqr':
+        return 'assets/images/logo_genqr.png';
       default:
         return '';
     }
@@ -27,6 +30,8 @@ class WebDownloadScreen extends StatelessWidget {
     switch (appId) {
       case 'dreamart':
         return 'com.mminhlequang.dreamart';
+      case 'genqr':
+        return 'com.mminhlequang.qrcoba';
       default:
         return '';
     }
@@ -36,6 +41,8 @@ class WebDownloadScreen extends StatelessWidget {
     switch (appId) {
       case 'dreamart':
         return '6480363700';
+      case 'genqr':
+        return '6746096507';
       default:
         return '';
     }
@@ -47,7 +54,14 @@ class WebDownloadScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Center(
         child: isNotFound()
-            ? Text("Hello world")
+            ? Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/code GIF.gif'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              )
             : Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
