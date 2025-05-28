@@ -67,8 +67,9 @@ class WebDownloadScreen extends StatelessWidget {
                 children: [
                   Image.asset(
                     getLogo(),
-                    width: 260,
+                    width: 200,
                   ),
+                  const SizedBox(height: 48),
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
