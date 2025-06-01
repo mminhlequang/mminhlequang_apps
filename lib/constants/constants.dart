@@ -1,0 +1,1 @@
+export 'legals.dart';

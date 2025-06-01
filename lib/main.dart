@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:website/screens/welcom_screen.dart';
 import 'package:url_strategy/url_strategy.dart';
 
-import 'screens/legal_screen.dart';
+import 'screens/dynamic_screen.dart';
 import 'screens/web_download_screen.dart';
 
 void main() {
@@ -22,16 +21,12 @@ class _App extends StatelessWidget {
       title: 'Apps information',
       debugShowCheckedModeBanner: false,
       routerConfig: GoRouter(
-        initialLocation: '/',
+        initialLocation: '/legal/about-me',
         onException: (context, state, router) {
           print(state.error);
-          router.pushReplacement('/');
+          router.pushReplacement('/legal/about-me');
         },
         routes: [
-          GoRoute(
-            path: '/',
-            builder: (context, state) => WelcomeScreen(),
-          ),
           GoRoute(
             path: '/download/:id',
             builder: (context, state) => WebDownloadScreen(
@@ -39,8 +34,9 @@ class _App extends StatelessWidget {
             ),
           ),
           GoRoute(
-            path: '/legal/:id',
-            builder: (context, state) => LegalScreen(
+            path: '/:path/:id',
+            builder: (context, state) => DynamicScreen(
+              path: state.pathParameters['path']!,
               id: state.pathParameters['id']!,
             ),
           ),
