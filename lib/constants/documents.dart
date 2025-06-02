@@ -179,4 +179,122 @@ Hệ thống bao gồm:
 
     """,
   },
+  "fastship-order-price": {
+    "id": "fastship-order-price",
+    "title": "FastShip Order Price",
+    "content": """
+## ✅ **CASE STRIPE** (Tiền đã vào ví System)
+
+### 🔹 **deliveryType = ship**
+
+* Tiền đã vào ví System → bắt đầu chia:
+
+#### 💰 Phân chia:
+
+* `storeEarning = 90% * subtotal`
+* `driverEarning = 70% * ship`
+* `tip` → chuyển hết cho driver nếu có
+
+#### 🧾 Transaction:
+
+* **Ví system:**
+
+  * `TRỪ driverEarning` chuyển cho tài xế đơn #ABC
+  * `TRỪ tip` (nếu có) chuyển cho tài xế đơn #ABC
+  * `TRỪ storeEarning` chuyển cho cửa hàng đơn #ABC
+* **Ví driver:**
+
+  * `CỘNG driverEarning` thu nhập đơn #ABC
+  * `CỘNG tip` (nếu có)
+* **Ví store:**
+
+  * `CỘNG storeEarning` thu nhập đơn #ABC
+
+---
+
+### 🔹 **deliveryType = pickup**
+
+* Không có ship, không có tài xế → chỉ chia cho store
+
+#### 💰 Phân chia:
+
+* `storeEarning = 90% * subtotal`
+* `systemEarning = 10% * subtotal`
+
+#### 🧾 Transaction:
+
+* **Ví system:**
+
+  * `TRỪ storeEarning` chuyển cho cửa hàng đơn #ABC
+* **Ví store:**
+
+  * `CỘNG storeEarning` thu nhập đơn #ABC
+
+---
+
+## ✅ **CASE CASH** (Tiền mặt, chưa vào ví System)
+
+---
+
+### 🔹 **deliveryType = ship**
+
+* Driver đã cầm toàn bộ tiền mặt (subtotal + ship + tip)
+* Cần **trừ từ ví driver** để phân chia lại cho store và system
+
+#### 💰 Phân chia:
+
+* `storeEarning = 90% * subtotal`
+* `systemEarning = 10% * subtotal + 30% * ship`
+* `driver giữ: 100% tiền mặt` → KHÔNG cộng vào ví driver
+* `tip` → driver đã giữ → KHÔNG xử lý
+
+#### 🧾 Transaction:
+
+* **Ví driver:**
+
+  * `TRỪ storeEarning` chuyển cho cửa hàng đơn #ABC
+  * `TRỪ systemEarning` chuyển cho hệ thống đơn #ABC
+* **Ví store:**
+
+  * `CỘNG storeEarning` thu nhập đơn #ABC
+* **Ví system:**
+
+  * `CỘNG systemEarning` hoa hồng hệ thống từ đơn #ABC
+
+---
+
+### 🔹 **deliveryType = pickup**
+
+* Store nhận tiền mặt từ khách
+* Cần **trừ từ ví store** để chia lại phần của hệ thống
+
+#### 💰 Phân chia:
+
+* `storeEarning = 90% * subtotal` → store đã giữ
+* `systemEarning = 10% * subtotal`
+* `driverEarning = 0`
+* `tip` → store giữ luôn nếu có → KHÔNG xử lý
+
+#### 🧾 Transaction:
+
+* **Ví store:**
+
+  * `TRỪ systemEarning` chia lại cho hệ thống đơn #ABC
+* **Ví system:**
+
+  * `CỘNG systemEarning` hoa hồng hệ thống từ đơn #ABC
+
+---
+
+## ✅ TỔNG KẾT BẢNG LOGIC
+
+| CASE   | deliveryType | Ai giữ tiền mặt? | Trừ từ ví ai? | Cộng ví driver        | Cộng ví store  | Cộng ví system                            |
+| ------ | ------------ | ---------------- | ------------- | --------------------- | -------------- | ----------------------------------------- |
+| STRIPE | ship         | System           | System        | + driverEarning + tip | + storeEarning | - driverEarning - tip - storeEarning      |
+| STRIPE | pickup       | System           | System        | (không có)            | + storeEarning | - storeEarning                            |
+| CASH   | ship         | Driver           | Driver        | (không cộng)          | + storeEarning | + 10% subtotal + 30% ship (trừ từ driver) |
+| CASH   | pickup       | Store            | Store         | (không có)            | (giữ lại 90%)  | + 10% subtotal (trừ từ store)             |
+ 
+    """,
+  },
 };
