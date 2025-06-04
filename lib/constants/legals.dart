@@ -382,4 +382,84 @@ If you have any questions about these Terms, please contact:
 📧 **Email:** mminh.lequang.dev@gmail.com
 ''',
   },
+  "privacy-policy-fastship": {
+    "id": "privacy-policy-fastship",
+    "title": "Privacy Policy",
+    "content": '''
+# FastShip - Privacy Policy
+
+**Last updated:** March 15, 2024
+
+## 1. Introduction
+**FastShip** ("we", "our" or "app") is committed to protecting users' privacy. This policy describes how we handle information related to your use of our food delivery application.
+
+## 2. Information Collection and Use
+We collect the following information to provide and improve our services:
+
+### 2.1. Personal Information
+- 📱 **Phone Number**: Required for order delivery and communication
+- 📧 **Email Address**: Used for account creation and notifications
+- 📍 **Location Data**: Required for accurate delivery services
+- 📸 **Profile Photos**: Optional, for account personalization
+- 🏠 **Delivery Addresses**: Saved for convenient reordering
+
+### 2.2. Data Protection
+- 🔒 All personal information is **encrypted** using industry-standard protocols
+- 🔒 Location data is only accessed when actively using the app
+- 🔒 Payment information is processed through secure third-party providers
+- 🔒 We **DO NOT sell** or share your personal information with third parties
+- 🔒 Data is stored on secure servers with restricted access
+
+## 3. How We Use Your Information
+We use your information to:
+- ✅ Process and deliver your food orders
+- ✅ Provide customer support
+- ✅ Send order updates and notifications
+- ✅ Improve our services and user experience
+- ✅ Ensure secure transactions
+
+## 4. User Rights
+You have the right to:
+- ✅ Access your personal information
+- ✅ Update or correct your information
+- ✅ Request deletion of your account and associated data
+- ✅ Opt-out of non-essential communications
+- ✅ Control location sharing permissions
+- ✅ Export your data
+
+## 5. Data Retention
+- We retain your information as long as your account is active
+- You can request account deletion at any time
+- Some information may be retained for legal compliance
+
+## 6. Security Measures
+We implement robust security measures including:
+- 🔐 End-to-end encryption for sensitive data
+- 🔐 Regular security audits
+- 🔐 Secure data storage
+- 🔐 Access controls and authentication
+- 🔐 Regular security updates
+
+## 7. Third-Party Services
+We use trusted third-party services for:
+- Payment processing
+- Map services
+- Analytics
+- Customer support
+
+These services have their own privacy policies and data handling practices.
+
+## 8. Policy Changes
+We may update this Privacy Policy from time to time. Any changes will be notified through our app or website.
+
+## 9. Contact
+If you have any questions about this Privacy Policy, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+## 10. Legal Compliance
+This policy complies with applicable data protection and privacy regulations, including **GDPR** and **CCPA** where applicable.
+
+> **By using FastShip, you agree to this Privacy Policy.**
+''',
+  },
 };
