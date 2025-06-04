@@ -462,4 +462,102 @@ This policy complies with applicable data protection and privacy regulations, in
 > **By using FastShip, you agree to this Privacy Policy.**
 ''',
   },
+  "terms-of-use-fastship": {
+    "id": "terms-of-use-fastship",
+    "title": "Terms of Use (EULA)",
+    "content": '''
+# FastShip - Terms of Use (EULA)
+
+**Last updated:** March 15, 2024
+
+## 1. Acceptance of Terms
+By downloading, installing, or using **FastShip** ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+## 2. Description of Service
+**FastShip** provides food delivery services, connecting users with restaurants and delivery partners. The App offers both free features and premium features available through subscription.
+
+## 3. Subscription Details
+
+### 3.1. Premium Features Subscription
+- **Title:** FastShip Premium
+- **Length:** Monthly and annual subscription options available
+- **Price:** \$4.99 USD per month or \$39.99 USD per year *(prices may vary by region)*
+- Subscription **automatically renews** unless auto-renew is turned off at least 24 hours before the end of the current period
+- Payment will be **charged to your Apple ID account** at confirmation of purchase
+- Your account will be charged for renewal within 24 hours prior to the end of the current period
+- Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's **Account Settings** after purchase
+- Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription
+
+### 3.2. Premium Benefits
+- 🚚 Free delivery on eligible orders
+- 💰 Exclusive discounts and offers
+- ⭐ Priority customer support
+- 🎁 Special member-only promotions
+- 📱 Ad-free experience
+
+## 4. User Account
+- You must be at least 18 years old to use the App
+- You are responsible for maintaining the confidentiality of your account
+- You must provide accurate and complete information
+- You are responsible for all activities under your account
+
+## 5. Order and Delivery
+- Orders are subject to restaurant availability
+- Delivery times are estimates only
+- We reserve the right to refuse service
+- Prices may vary based on location and time
+- Additional fees may apply for delivery
+
+## 6. Payment Terms
+- All payments are processed securely
+- Prices are subject to change without notice
+- Refunds are subject to our refund policy
+- You agree to pay all applicable taxes and fees
+
+## 7. User Conduct
+You agree **not** to:
+- ❌ Use the App for any illegal purpose
+- ❌ Place fraudulent orders
+- ❌ Harass delivery partners or restaurant staff
+- ❌ Attempt to manipulate the rating system
+- ❌ Use the App to distribute harmful content
+- ❌ Interfere with the App's operation
+
+## 8. Intellectual Property
+All intellectual property rights in the App and its content belong to us or our licensors.
+
+## 9. Disclaimer of Warranties
+The App is provided **"as is"** without warranties of any kind. We do not guarantee:
+- Uninterrupted service
+- Accuracy of restaurant information
+- Exact delivery times
+- Availability of all menu items
+
+## 10. Limitation of Liability
+We shall not be liable for:
+- Delays in delivery
+- Incorrect orders
+- Food quality issues
+- Any indirect, incidental, or consequential damages
+
+## 11. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+## 12. Termination
+We may terminate or suspend your access to the App at any time without notice for:
+- Violation of these Terms
+- Fraudulent activity
+- Abusive behavior
+- Non-payment of fees
+
+## 13. Governing Law
+These terms shall be governed by and construed in accordance with the **laws of Vietnam**.
+
+## 14. Contact
+If you have any questions about these Terms, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+> **By using FastShip, you agree to these Terms of Use.**
+''',
+  },
 };
