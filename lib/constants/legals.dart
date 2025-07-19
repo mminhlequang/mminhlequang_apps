@@ -560,4 +560,139 @@ If you have any questions about these Terms, please contact:
 > **By using FastShip, you agree to these Terms of Use.**
 ''',
   },
+  "privacy-policy-eflashcard": {
+    "id": "privacy-policy-eflashcard",
+    "title": "Privacy Policy",
+    "content": '''
+# eFlashcard - Privacy Policy
+
+**Last updated:** March 15, 2024
+
+## 1. Introduction
+**eFlashcard** ("we", "our" or "app") is committed to protecting users' privacy. This policy describes how we handle information related to your use of our flashcard learning application.
+
+## 2. Information Collection and Use
+- We **DO NOT collect** any personal information from users
+- **No account registration** or login required
+- **No user activity tracking**
+- **No user data stored** on servers
+- **No information sharing** with third parties
+- All flashcard data is stored **locally on your device**
+
+## 3. User Rights
+You have the right to:
+- ✅ Use the app without providing personal information
+- ✅ Create and manage flashcards locally on your device
+- ✅ Request confirmation about non-collection of data
+- ✅ Contact us about any privacy-related concerns
+
+## 4. Security
+Although we don't collect data, we still implement reasonable security measures to protect the app from unauthorized access or modification.
+
+## 5. Policy Changes
+We may update this Privacy Policy from time to time. Any changes will be notified through our app or website.
+
+## 6. Contact
+If you have any questions about this Privacy Policy, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+## 7. Legal Compliance
+This policy complies with applicable data protection and privacy regulations, including **GDPR** and **CCPA** where applicable.
+
+> **By using eFlashcard, you agree to this Privacy Policy.**
+''',
+  },
+  "terms-of-use-eflashcard": {
+    "id": "terms-of-use-eflashcard",
+    "title": "Terms of Use (EULA)",
+    "content": '''
+# eFlashcard - Terms of Use (EULA)
+
+**Last updated:** March 15, 2024
+
+## 1. Acceptance of Terms
+By downloading, installing, or using **eFlashcard** ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+## 2. Description of Service
+**eFlashcard** provides digital flashcard learning tools and educational content. The App offers both free features and premium features available through subscription.
+
+## 3. Subscription Details
+
+### 3.1. Premium Features Subscription
+- **Title:** eFlashcard Premium
+- **Length:** Monthly and annual subscription options available
+- **Price:** \$3.99 USD per month or \$29.99 USD per year *(prices may vary by region)*
+- Subscription **automatically renews** unless auto-renew is turned off at least 24 hours before the end of the current period
+- Payment will be **charged to your Apple ID account** at confirmation of purchase
+- Your account will be charged for renewal within 24 hours prior to the end of the current period
+- Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's **Account Settings** after purchase
+- Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription
+
+### 3.2. Premium Benefits
+- 📚 Unlimited flashcard creation
+- 🔄 Advanced study modes and algorithms
+- 📊 Detailed progress analytics
+- ☁️ Cloud synchronization across devices
+- 🎨 Custom themes and personalization
+- 📱 Ad-free learning experience
+
+## 4. User-Generated Content
+- You retain ownership of flashcards and content you create
+- All content is stored locally on your device
+- You are responsible for the accuracy and appropriateness of your content
+- We do not have access to or store your flashcards
+
+## 5. Educational Content
+- We strive to provide accurate educational content
+- Content is for educational purposes only
+- We do not guarantee the accuracy of all information
+- Users should verify important information from authoritative sources
+
+## 6. User Conduct
+You agree **not** to:
+- ❌ Use the App for any illegal purpose
+- ❌ Create inappropriate or offensive content
+- ❌ Attempt to hack or manipulate the App
+- ❌ Use the App to distribute harmful content
+- ❌ Violate intellectual property rights
+
+## 7. Intellectual Property
+- All intellectual property rights in the App belong to us or our licensors
+- Educational content may be subject to third-party copyright
+- You retain rights to your user-generated content
+- You may not copy or distribute our proprietary content
+
+## 8. Disclaimer of Warranties
+The App is provided **"as is"** without warranties of any kind. We do not guarantee:
+- Uninterrupted service
+- Accuracy of all educational content
+- Specific learning outcomes
+- Compatibility with all devices
+
+## 9. Limitation of Liability
+We shall not be liable for:
+- Any learning outcomes or academic performance
+- Loss of user-generated content
+- Interruptions in service
+- Any indirect, incidental, or consequential damages
+
+## 10. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+## 11. Termination
+We may terminate or suspend your access to the App at any time without notice for:
+- Violation of these Terms
+- Inappropriate use of the App
+- Non-payment of subscription fees
+
+## 12. Governing Law
+These terms shall be governed by and construed in accordance with the **laws of Vietnam**.
+
+## 13. Contact
+If you have any questions about these Terms, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+> **By using eFlashcard, you agree to these Terms of Use.**
+''',
+  },
 };
