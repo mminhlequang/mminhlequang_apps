@@ -9,6 +9,7 @@ class WebDownloadScreen extends StatelessWidget {
     switch (appId) {
       case 'dreamart':
       case 'genqr':
+      case 'eflashcard':
         return false;
       default:
         return true;
@@ -21,6 +22,8 @@ class WebDownloadScreen extends StatelessWidget {
         return 'assets/images/logo_dreamart.png';
       case 'genqr':
         return 'assets/images/logo_genqr.png';
+      case 'eflashcard':
+        return 'assets/images/logo_eflashcard.png';
       default:
         return '';
     }
@@ -32,6 +35,8 @@ class WebDownloadScreen extends StatelessWidget {
         return 'com.mminhlequang.dreamart';
       case 'genqr':
         return 'com.mminhlequang.qrcoba';
+      case 'eflashcard':
+        return 'com.mminhlequang.eflashcard';
       default:
         return '';
     }
@@ -43,6 +48,8 @@ class WebDownloadScreen extends StatelessWidget {
         return '6480363700';
       case 'genqr':
         return '6746096507';
+      case 'eflashcard':
+        return '6748866414';
       default:
         return '';
     }
@@ -65,9 +72,12 @@ class WebDownloadScreen extends StatelessWidget {
             : Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.asset(
-                    getLogo(),
-                    width: 200,
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(32),
+                    child: Image.asset(
+                      getLogo(),
+                      width: 200,
+                    ),
                   ),
                   const SizedBox(height: 48),
                   Row(
