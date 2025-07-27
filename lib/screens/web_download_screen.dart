@@ -10,6 +10,7 @@ class WebDownloadScreen extends StatelessWidget {
       case 'dreamart':
       case 'genqr':
       case 'eflashcard':
+      case 'vootroll':
         return false;
       default:
         return true;
@@ -24,6 +25,8 @@ class WebDownloadScreen extends StatelessWidget {
         return 'assets/images/logo_genqr.png';
       case 'eflashcard':
         return 'assets/images/logo_eflashcard.png';
+      case 'vootroll':
+        return 'assets/images/logo_vootroll.png';
       default:
         return '';
     }

@@ -695,4 +695,120 @@ If you have any questions about these Terms, please contact:
 > **By using eFlashcard, you agree to these Terms of Use.**
 ''',
   },
+  "privacy-policy-vootroll": {
+    "id": "privacy-policy-vootroll",
+    "title": "Privacy Policy",
+    "content": '''
+# VooTroll - Privacy Policy
+
+**Last updated:** March 15, 2024
+
+## 1. Introduction
+**VooTroll** ("we", "our" or "app") is committed to protecting users' privacy. This policy describes how we handle information related to your use of the application.
+
+## 2. Information Collection and Use
+- We **DO NOT collect** any personal information from users
+- **No account registration** or login required
+- **No user activity tracking**
+- **No user data stored** on servers
+- **No information sharing** with third parties
+- All app data is stored **locally on your device**
+
+## 3. User Rights
+You have the right to:
+- ✅ Use the app without providing personal information
+- ✅ Request confirmation about non-collection of data
+- ✅ Contact us about any privacy-related concerns
+
+## 4. Security
+Although we don't collect data, we still implement reasonable security measures to protect the app from unauthorized access or modification.
+
+## 5. Policy Changes
+We may update this Privacy Policy from time to time. Any changes will be notified through our app or website.
+
+## 6. Contact
+If you have any questions about this Privacy Policy, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+## 7. Legal Compliance
+This policy complies with applicable data protection and privacy regulations, including **GDPR** and **CCPA** where applicable.
+
+> **By using VooTroll, you agree to this Privacy Policy.**
+''',
+  },
+  "terms-of-use-vootroll": {
+    "id": "terms-of-use-vootroll",
+    "title": "Terms of Use (EULA)",
+    "content": '''
+# VooTroll - Terms of Use (EULA)
+
+**Last updated:** March 15, 2024
+
+## 1. Acceptance of Terms
+By downloading, installing, or using **VooTroll** ("the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.
+
+## 2. Description of Service
+**VooTroll** provides entertainment and utility features. The App is completely free to use with no paid features or subscriptions.
+
+## 3. Free Service
+- ✅ **100% Free**: All features are available at no cost
+- ✅ **No Subscriptions**: No premium or paid versions
+- ✅ **No In-App Purchases**: No additional purchases required
+- ✅ **No Hidden Costs**: Complete transparency in pricing
+- ✅ **No Ads**: Clean, ad-free experience
+
+## 4. User-Generated Content
+- You retain ownership of any content you create using the App
+- All content is stored locally on your device
+- You are responsible for the appropriateness of your content
+- We do not have access to or store your content
+
+## 5. Restrictions on Use
+You agree **not** to:
+- ❌ Use the App for any illegal purpose
+- ❌ Create inappropriate or offensive content
+- ❌ Attempt to hack or manipulate the App
+- ❌ Use the App to distribute harmful content
+- ❌ Reverse engineer or attempt to extract the source code
+- ❌ Use the App in a way that violates third-party rights
+
+## 6. Intellectual Property
+- All intellectual property rights in the App belong to us or our licensors
+- You retain rights to your user-generated content
+- You may not copy or distribute our proprietary content
+- Third-party content may be subject to their own copyright
+
+## 7. Disclaimer of Warranties
+The App is provided **"as is"** without warranties of any kind. We do not guarantee:
+- Uninterrupted service
+- Compatibility with all devices
+- Specific functionality or features
+- Error-free operation
+
+## 8. Limitation of Liability
+We shall not be liable for:
+- Any loss of data or content
+- Interruptions in service
+- Any indirect, incidental, or consequential damages
+- Damages resulting from misuse of the App
+
+## 9. Changes to Terms
+We may modify these terms at any time by posting the revised terms on our website or within the App.
+
+## 10. Termination
+We may terminate or suspend your access to the App at any time without notice for:
+- Violation of these Terms
+- Inappropriate use of the App
+- Misuse of the App's features
+
+## 11. Governing Law
+These terms shall be governed by and construed in accordance with the **laws of Vietnam**.
+
+## 12. Contact
+If you have any questions about these Terms, please contact:  
+📧 **Email:** mminh.lequang.dev@gmail.com
+
+> **By using VooTroll, you agree to these Terms of Use.**
+''',
+  },
 };
